@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="tasks.js"></script>
+</head>
+<body style="font-family: 'Baskerville'; text-align: center; font-size: 18px">
+    <h1>Task 1</h1>
+    <form action="" name="input-array" method="post">
+        Please, input an integer array like this: 1, 2, 3, 4, 5 <br><br>
+        <input type="text" name="array"><br><br>
+        <input type="checkbox" name="descending"> Descending sort <br><br>
+        <button onclick="sortInputHandle()" type="button">Sort array</button>
+    </form>
+    <br>
+    <div id="sort-result" style="display: none"></div>
+    <h1>Task 2</h1>
+    <div style="background: black; font-size: 11px; border-radius: 20px">
+        <script>flag()</script>
+    </div>
+    <h1>Tasks 3–5</h1>
+    <form id="contact-form" action="" style="text-align: left; width: 100%; max-width: 270px; margin: 0 auto">
+        Name: <input type="text" style="width: 150px" name="full-name"><br><br>
+        <span id="phone">Phone: <input type="tel" style="width: 150px" name="phone1"></span>
+                <button type="button" style="margin-left: 7px" onclick="plusPhone()">+</button><br><br>
+        Comments: <br><textarea style="height: 100px; width: 260px; margin-top: 10px" name="comment"></textarea><br><br>
+        <button id="submit-form" style="margin-left: 100px" onclick="new Person().send()">Submit</button>
+    </form>
+    <div id="footer" style="height: 300px"></div>
+</body>
+</html>
